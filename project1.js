@@ -63,9 +63,8 @@ setupSidebarButtons();
 // document.getElementById("btnOpenSidebarView4").addEventListener("click", openSidebar);
 
 
-
-
-
-
-
-
+function changeInputType() {
+    var input = document.getElementById('starting');
+    input.type = 'date';
+    input.removeAttribute('onclick'); // Remove onclick attribute to prevent multiple conversions
+}
